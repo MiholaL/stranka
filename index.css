@@ -1,16 +1,16 @@
-body {color: darkgray;}
+body {background: #333;}
 p {
-	color: white;
-	font: sans-serif;
+	color: whitesmoke;
 	size: 15px;
 }
 h1 {
-	align-content: center;
+	text-align: center;
 	color: white;
 }
-h2{color: white;}
-h3{color: white;}
-h4{color: white;}
-h5{color: white;}
-h6{color: white;}
-hr{color: white;}
+h2{color: whitesmoke;}
+h3{color: whitesmoke;}
+h4{color: whitesmoke;}
+h5{color: whitesmoke;}
+h6{color: whitesmoke;}
+hr{color: whitesmoke;}
+img {color: whitesmoke;}
