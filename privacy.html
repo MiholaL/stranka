@@ -18,29 +18,29 @@
 	"Soukromí je nezbytnou součástí svobody"</em></p><br>
 	<h2>Reklamy a sledovací prvky</h2>
 	<ul>
-		<li>Sledovací prvky mají za úkol zjistit o vás co nejvíc, aby se vám pak mohli ukazovat reklamy na něco co vás zajímá a koupili si to.</li>
-		<li>Nejlepší kombinace pro zabránění sledování a reklam jsou doplňky do prohlížeče: uBlock Origin, Decentraleyes a ClearURLs</li>
+		<li>Sledovací prvky mají za úkol zjistit o vás co nejvíc, aby vám pak mohly zobrazovat reklamy na něco co vás zajímá a koupili jste si to.</li>
+		<li>Nejlepší kombinace pro blokování sledovacích prvků a reklam jsou doplňky do prohlížeče: uBlock Origin, Decentraleyes a ClearURLs</li>
 		<li>Reklamy se nachází i v systému Windows: <ul>
 			<li>Na zamykací obrazovce</li>
-			<li>neodstranitelný Microsoft Edge</li>
+			<li>Neodstranitelný Microsoft Edge</li>
 			<li>Doporučené aplikace ve Start menu</li>
-			<li>reklamy na office</li>
-			<li>kompletní list Windows zabudovaný reklam <a href="https://www.howtogeek.com/269331/how-to-disable-all-of-windows-10s-built-in-advertising/">zde</a></li>
+			<li>Reklamy na Office</li>
+			<li>Kompletní list Windows zabudovaný reklam <a href="https://www.howtogeek.com/269331/how-to-disable-all-of-windows-10s-built-in-advertising/">zde</a></li>
 		</ul></li><br>
 		<li>Blokování reklam pomocí DNS <ul>
-			<li>Funguje pomocí zamítnutí přeložení URL na IP adresu reklamových serverů</li>
+			<li>Funguje pomocí zamítnutí přeložení URL reklamových serverů na IP adresu</li>
 			<li>Bezpečné DNS s blokováním reklam: AdGuard DNS a NextDNS</li>
 		</ul></li>
 	</ul><br>
 	<h2>Prohlížeče</h2>
 	<ul>
 		<li>Dobré <ul>
-			<li>Firefox - Při správném nastavení nejlepší prohlížeč</li>
-			<li>LibreWolf - Založený na Firefoxu, lepší výchozí nastavení</li>
-			<li>Tor - Založený na Firefoxu, připojuje se k internetu pouze přes počítačovou síť Tor, více věcí později</li>
+			<li>Firefox - Při správném nastavení je to ten nejlepší prohlížeč</li>
+			<li>LibreWolf - Založený na Firefoxu, ale má lepší výchozí nastavení</li>
+			<li>Tor - Založený na Firefoxu, připojuje se k internetu pouze přes počítačovou síť Tor, více informací později</li>
 		</ul></li>
 		<li>Špatné <ul>
-			<li>Chrome - zabudované sledovací prvky, založený na Chromiu, takže žere hodně paměti, od června 2024 přestane podporovat Manifest V2 (blokování reklam bude velmi omezené)</li>
+			<li>Chrome - zabudované sledovací prvky, založený na Chromiu, takže zabírá hodně paměti, od června 2024 přestane podporovat Manifest V2 (blokování reklam bude velmi omezené)</li>
 			<li>Edge - všechny problémy Chromu, ale je od Microsoftu a horší</li>
 			<li>Opera - čínská kopie Chromu, kromě sledovacích prvků Googlu má i mnohem horší čínské</li>
 			<li>Safari - zabudovaný prohlížeč Applu, používá Apple WebKit, není úplně nejlepší, ale pořád lepší než Chromium</li>
@@ -56,17 +56,17 @@
 		</ul></li>
 		<li>Špatné <ul>
 			<li>Google - Prohlížeč provozován největší reklamní společností na světě, kvalita vyhledávaní je dobrá, ale používá vaši historii vyhledávání k personalizovaným reklamám a navždy ji skladuje, je to jedna z nejhorších kombinací při použití s prohlížečem Chrome</li>
-			<li>Bing - Prohlížeč provozován Microsoftem, vyhledávání je používatelné, ale má stejné problémy jako Google, namísto Googlu odesílá vaše data Microsoftu, je to jedna z nejhorších kombinací při použití s prohlížečem Edge</li>
+			<li>Bing - Prohlížeč provozován Microsoftem, vyhledávání je používatelné, ale má stejné problémy jako Google, namísto Googlu odesílá vaše data Microsoftu, výchozí vyhledávač v Microsoft Edge</li>
 			<li>Yahoo - Téměř zapomenutý prohlížeč, kvalita vyhledávání i problémy podobné Bingu</li>
 		</ul></li>
 	</ul>
 	<br>
-	<h2>Prohlížeč a síť Tor</h2>
+	<h2>Síť a Prohlížeč Tor</h2>
 	<h3>Jak funguje?</h3>
 	<ol>
 		<li>Prohlížeč Tor se při startu připojí ke třem náhodným serverům sítě Tor</li>
-		<li>Vytvoří si tři dvojice soukromých a veřejných klíčů pro AES šifrování a každému serveru pošle jeden</li>
-		<li>Při odeslání požadavků webové stránce zašifruje data všemi třemi klíči a pošle ho prvnímu serveru, který svým klíčem část jednu vrstvu odšifruje a to mu ukáže pouze, kterému serveru to má odeslat a takhle to pokračuje až do posledního serveru, který zjistí, že je požadavek odšifrován a odešle ho serveru. Pokud cílový server používá příponu .onion se požadavek přenáší pouze přes Tor, jinak není od posledního serveru chráněn. Na odkrytí identity uživatele Toru musí útočník vlastnit upravenou verzi všech tří serverů Toru (v dnešní době je jich přes 8 000)</li>
+		<li>Vytvoří si tři dvojice soukromých a veřejných klíčů pro šifrování pomocí AES a každému serveru pošle jeden</li>
+		<li>Při odeslání požadavku webové stránce zašifruje data všemi třemi klíči a pošle ho prvnímu serveru, který svým klíčem jednu vrstvu odšifruje a ta mu ukáže, kterému serveru má data odeslat a takhle to pokračuje až do posledního serveru, který zjistí, že je požadavek odšifrován a odešle ho webové stránce. Pokud cílový server používá příponu .onion tak se požadavek přenáší pouze přes Tor, jinak není od posledního serveru chráněn. Na odkrytí identity uživatele Toru musí útočník vlastnit upravenou verzi všech tří serverů Toru na kterou by se náhodou uživatel mohl připojit (v dnešní době je jich přes 8 000)</li>
 		<li><a href="https://www.youtube.com/watch?v=79m7mX3rC8Q">Video které podrobněji popisuje Tor</a></li>
 
 	</ol>
@@ -77,7 +77,7 @@
 		</ul></li>
 		<li>Většina jeho uživatelů jsou lidé, kteří se zajímají o své soukromí, nebo provozují/používají černý trh</li>
 	</ul>
-	<h3>Co na .onion stránkách najdete</h3>
+	<h3>Co na jeho .onion stránkách najdete</h3>
 	<ul>
 		<li>Plno nefunkčních stránek</li>
 		<li>Normální stránky, které mají verzi pro Tor uživatele</li>
@@ -91,8 +91,8 @@
 		<li>VPN pouze skryje vaši IP adresu a chrání data před ostatními pouze v části od vašeho počítače po VPN server. Část od VPN serveru po webovou stránku NENÍ chráněna!</li>
 		<li>Provozovatel VPN služby vidí co posíláte</li>
 		<li>Nechrání vás před vašim poskytovatelem internetu, ani Routerem, protože v 99% používáte jeho DNS na přeložení URL na IP adresu</li>
-		<li>Provozovatelé VPN služeb často platí Youtuberům za reklamy ve videjích, kde výměnou za obrovské množství peněz řeknou jak strašně jste bez VPN ohroženi a jak vám <em>"každý na veřejné WiFi může vzít všechna hesla"</em> což není pravda, protože všechny stránky až na pár velmi starých používají zabezpečené HTTPS spojení</li>
-		<li>Jediný dobrý důvod proč používat VPN je BitTorrent</li>
+		<li>Provozovatelé VPN služeb často platí influencerům za reklamy ve videjích, kde výměnou za obrovské množství peněz řeknou, jak strašně jste bez VPN ohroženi a jak vám <em>"každý na veřejné WiFi může vzít všechna hesla"</em> což není pravda, protože všechny stránky až na pár velmi starých používají zabezpečené HTTPS spojení</li>
+		<li>Jediný dobrý důvod proč používat VPN je pro BitTorrent</li>
 		<li><a href="https://www.youtube.com/watch?v=WVDQEoe6ZWY">Video které tohle rozebírá</a></li>
 	</ul>
 	<a href="index.html">Zpět na hlavní stránku</a>

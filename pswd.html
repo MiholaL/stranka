@@ -23,26 +23,26 @@
 			<li><abbr title="1234, 0001, abc, sprostá a nevhodná slova, známá jména, názvy filmů a míst, datum nebo rok">žádné často používané věci</abbr></li>
 	</ul></p><br>
 	<h2>Skladování hesel</h2>
-	<p>Stránky a aplikace neskladují v normálním textu, protože by to bylo při úniku dat velmi nebezpečné <br>
-	místo toho je skladují v takzvaných hashích</p>
+	<p>Stránky a aplikace neskladují hesla v normálním textu, protože by to bylo při úniku dat velmi nebezpečné.<br>
+	Místo toho je skladují v takzvaných hashích</p>
 	<h2>Hashovací funkce</h2>
 	<ul>
 		<li>Jsou to <abbr title="Matimatické funkce které nemají opak, například zbytek po celočíselném dělení">jednostranné matematické funkce</abbr>, které při stejném vstupu mají vždy stejný výstup. I trochu jiný vstup má úplně jiný výstup a má vždy stejnou délku.</li>
-		<li>Existují jich stovky a ne všechny jsou stejně bezpečné</li>
-		<li>Používají se na skladování hesel, ověření nepoškození souboru a <abbr title="Ověření že software pochází od ověřené společnosti">digitálních podpisů</abbr></li>
-		<li>Není potřeba uchovávat hesla v normálním textu, protože můžou být ověřena hashem <ul>
-			<li>Uživatel zadá své heslo a při přihlšení ho server dá do hashovací funkce a pokud se výstup bude rovnat už uloženému výstupu, tak to znamená, že uživatel zadal správné heslo</li>
-			<li>Při úniku hashů jsou útočníkům hashe k ničemu, protože z nich nejde odvodit heslo, ale jen ověřit</li>
+		<li>Hashovacích funkcí existují stovky, ale ne všechny jsou stejně bezpečné</li>
+		<li>Používají se na skladování hesel, <abbr title="Tím že se hash jen při malé úpravě kompletně změní se dá využít při ověření integrity souboru">ověření souborů</abbr> a <abbr title="Ověření že software pochází od ověřené společnosti">digitálních podpisů</abbr></li>
+		<li>Postup ověření hesla hashem: <ul>
+			<li>Uživatel zadá své heslo a při přihlášení server heslo zadá do hashovací funkce a pokud se výstup bude rovnat už uloženému výstupu, tak to znamená, že uživatel zadal heslo správně</li>
+			<li>Při úniku hashů jsou útočníkům hashe k ničemu, protože z nich nejde původní obsah odvodit, ale jen ověřit</li>
 		</ul></li>
 	</ul><br>
 	<h2>Zjišťování hesel z hashů</h2>
 	<ul>
-		<li>Není úplně pravda, že z hashů nejde zjistit původní heslo, ale zjistit dostatečně silné heslo by trvalo tisíce let</li>
-		<li>Možnosti zjišťování hesel <ul>
+		<li>Není zcela pravda, že z hashů nejde zjistit původní heslo, ale pokud je dostatečně silné tak by to trvalo tisíce let</li>
+		<li>Možnosti zpětného zjišťění hesla z hashe<ul>
 			<li>Hrubou silou: Počítač použije program na vyzkoušení všech možných kombinací hesla</li>
-			<li>"Slovníkem" a pravidly: Počítač použije <abbr title="nejznáměší volně dostupný je rockyou.txt">list několika miliónů nejpoužívanějších hesel</abbr> a podle dalšího souboru s pravidly každé několikrát upraví a vyzkouší jestli funguje</li>
+			<li>"Slovníkem" a pravidly: Počítač použije <abbr title="nejznáměší volně dostupný je rockyou.txt">list několika miliónů nejpoužívanějších hesel</abbr> a podle dalšího souboru s pravidly každé z nich několikrát upraví a vyzkouší jestli funguje</li>
 		</ul></li>
-		<li>Nejlepší programy na zpětné zjištění hesel jsou HashCat nebo John The Ripper, nejsou velmi obtížné na nastavení a jsou velmi rychlé</li>
+		<li>Nejlepší programy na zpětné zjištění hesel jsou HashCat nebo John The Ripper</li>
 	</ul>
 	<a href="index.html">Zpět na hlavní stránku</a>
 	<br><br><br><br><br>
