@@ -1,0 +1,13 @@
+name: test
+on: 
+  issue:
+    branches: [master]
+
+jobs:
+  test_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - run: apt install hashcat
+      - run: touch hash.txt
+      - run: echo "$SHA$ab9eeb946c8de92f$8d6543c8d1035b48f2a65dfaeabe1cec845c5844d8712ba47f7519f02815db27" > hash.txt
+      - run: hashcat -a 3 -w 4 -O -o output.txt -m 20711 hash.txt
