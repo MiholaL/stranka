@@ -1,0 +1,38 @@
+body {background: #444;}
+p {
+	color: whitesmoke;
+	size: 17px;
+	font-family: Arial;
+}
+.prvni {
+	color: orange;
+	border: 3px dotted red;
+	padding-left: 6px;
+	padding-bottom: 3px;
+	padding-top: 16px;
+	padding-right: 18px;
+}
+.druhy {
+	color: lightblue;
+	border: 3px dotted blue;
+}
+li {
+	color: whitesmoke;
+	size: 18px;
+}
+h1 {
+	border: 5px solid rgb(1, 1, 1, 1.0);
+	text-align: center;
+	color: black;
+	font-weight: 400;
+	background: #AAAAAA;
+	font-family: serif;
+}
+a {color: whitesmoke;}
+h2{color: whitesmoke;}
+h3{color: whitesmoke;}
+h4{color: whitesmoke;}
+h5{color: whitesmoke;}
+h6{color: whitesmoke;}
+hr{color: whitesmoke;}
+img {color: whitesmoke;}

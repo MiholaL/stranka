@@ -1,4 +1,4 @@
-body {background: #333;}
+body {background: #444;}
 p {
 	color: whitesmoke;
 	size: 17px;
@@ -9,7 +9,10 @@ li {
 }
 h1 {
 	text-align: center;
-	color: white;
+	color: #000;
+	background: #BBBBBB;
+	border: solid 4px #111;
+
 }
 a {color: whitesmoke;}
 h2{color: whitesmoke;}
@@ -19,4 +22,9 @@ h5{color: whitesmoke;}
 h6{color: whitesmoke;}
 hr{color: whitesmoke;}
 img {color: whitesmoke;}
-address {color: whitesmoke;}
+address {
+	border: 3px solid rgb(1, 1, 1, 1.0);
+	color: black;
+	background: #CCCCCC;
+	width: 280px;
+}
